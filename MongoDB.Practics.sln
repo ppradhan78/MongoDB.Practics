@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.Practics.API", "MongoDB.Practics.API\MongoDB.Practics.API.csproj", "{317402EC-2CEE-45ED-8DFD-406C338A1E7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDB.Practics.API", "MongoDB.Practics.API\MongoDB.Practics.API.csproj", "{317402EC-2CEE-45ED-8DFD-406C338A1E7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB.Practics.Data", "MongoDB.Practics.Data\MongoDB.Practics.Data.csproj", "{0E08971F-7CF8-4279-82A8-2C95D3707243}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDB.Practics.Data", "MongoDB.Practics.Data\MongoDB.Practics.Data.csproj", "{0E08971F-7CF8-4279-82A8-2C95D3707243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDbEFCodeFirst", "MongoDbEFCodeFirst\MongoDbEFCodeFirst.csproj", "{B11670B2-869A-4EA9-B6C5-3A40AE46A8ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0E08971F-7CF8-4279-82A8-2C95D3707243}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E08971F-7CF8-4279-82A8-2C95D3707243}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E08971F-7CF8-4279-82A8-2C95D3707243}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11670B2-869A-4EA9-B6C5-3A40AE46A8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11670B2-869A-4EA9-B6C5-3A40AE46A8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11670B2-869A-4EA9-B6C5-3A40AE46A8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11670B2-869A-4EA9-B6C5-3A40AE46A8ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
