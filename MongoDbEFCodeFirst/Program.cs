@@ -10,5 +10,5 @@ var dbContextOptions =
     new DbContextOptionsBuilder<MongoDbContext>().UseMongoDB(mongoClient, "EFCode");
 var db = new MongoDbContext(dbContextOptions.Options);
 // Add a new customer and save it to the database
-db.Customers.Add(new Customer() { Name = "John Doe", Order = "1 Green Tea" });
+db.Customers.Add(new Customer() { CustomerId=1, Name = "John Doe", Order = "1 Green Tea" });
 db.SaveChanges();

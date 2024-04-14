@@ -16,6 +16,8 @@ builder.Services.AddScoped<IDatabaseContext, DatabaseContext>();
 //builder.Services.AddScoped<ISampleQuizRepository, SampleQuizRepository>();
 builder.Services.AddScoped<IEmployeeCore, EmployeeCore>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IRegionCore, RegionCore>();
+builder.Services.AddScoped<IRegionRepository, RegionRepository>();
 
 
 
