@@ -16,8 +16,24 @@ builder.Services.AddScoped<IDatabaseContext, DatabaseContext>();
 //builder.Services.AddScoped<ISampleQuizRepository, SampleQuizRepository>();
 builder.Services.AddScoped<IEmployeeCore, EmployeeCore>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
-builder.Services.AddScoped<IRegionCore, RegionCore>();
-builder.Services.AddScoped<IRegionRepository, RegionRepository>();
+
+builder.Services.AddScoped<IOrdersCore, OrdersCore>();
+builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
+
+builder.Services.AddScoped<ICategoriesCore, CategoriesCore>();
+builder.Services.AddScoped<ICategoriesRepository, CategoriesRepository>();
+
+
+builder.Services.AddScoped<ICustomersCore, CustomersCore>();
+builder.Services.AddScoped<ICustomersRepository, CustomersRepository>();
+
+builder.Services.AddScoped<IOrderDetailsCore, OrderDetailsCore>();
+builder.Services.AddScoped<IOrderDetailsRepository, OrderDetailsRepository>();
+
+builder.Services.AddScoped<IOrdersCore, OrdersCore>();
+builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
+
+
 
 
 
