@@ -36,6 +36,9 @@ builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddScoped<IProductsCore, ProductsCore>();
 builder.Services.AddScoped<IProductsRepository, ProductsRepository>();
 
+builder.Services.AddScoped<IShippersCore, ShippersCore>();
+builder.Services.AddScoped<IShippersRepository, ShippersRepository>();
+
 
 
 
