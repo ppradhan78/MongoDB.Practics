@@ -10,7 +10,7 @@ namespace MongoDB.Practics.API.Controllers
     [Route("OrderDetailsAPI/v1/[controller]")]
     public class OrderDetailsController : BaseController<OrderDetails>
     {
-        public OrderDetailsController(OrderDetailsCore repository, ILogger<OrderDetails> logger) : base(repository, logger)
+        public OrderDetailsController(IOrderDetailsCore repository, ILogger<OrderDetails> logger) : base(repository, logger)
         {
         }
     }
