@@ -1,0 +1,48 @@
+<p>order-details works!</p>
+
+
+  <input matInput (keyup)="filter($event)">
+<div class="mat-elevation-z8">
+
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" matSort  matSortDisableClear="true">
+
+    <!--<ng-container matColumnDef="Id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header="Id" sortActionDescription="Sort by Id">Id </th>
+      <td mat-cell *matCellDef="let element">
+        <a routerLink="/categoriedetails">{{element.id}}</a>
+      </td>
+    </ng-container>-->
+
+    <ng-container matColumnDef="orderID">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header="orderID" sortActionDescription="Sort by orderID"> OrderID </th>
+      <td mat-cell *matCellDef="let element"> {{element.orderID}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="productID">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header="productID" sortActionDescription="Sort by productID"> ProductID </th>
+      <td mat-cell *matCellDef="let element"> {{element.productID}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="unitPrice">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header="unitPrice" sortActionDescription="Sort by unitPrice"> Unit Price </th>
+      <td mat-cell *matCellDef="let element"> {{element.unitPrice}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header="quantity" sortActionDescription="Sort by quantity"> Quantity </th>
+      <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+  <div *ngIf="!(OrderDetails) || OrderDetails?.length===0">
+    No Record
+  </div>
+  <mat-paginator [pageSizeOptions]="[5,10, 20]" [style.display]="OrderDetails?.length?'block':'none'"
+                 showFirstLastButtons
+                 aria-label="Select page of periodic elements">
+  </mat-paginator>
+</div>

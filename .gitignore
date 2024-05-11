@@ -12,3 +12,5 @@
 /MongoDB.Practics.Data/bin/Debug/net8.0
 /MongoDbEFCodeFirst/bin/Debug/net7.0
 /MongoDbEFCodeFirst/obj
+/MongoDB.Practics.UI/.vs
+/MongoDB.Practics.UI/.vscode

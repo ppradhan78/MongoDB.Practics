@@ -1,0 +1,20 @@
+<mat-menu #appMenu="matMenu">
+  <ng-template matMenuContent>
+    <a mat-menu-item routerLink="/home">Home</a>
+    <a mat-menu-item routerLink="/category">Category</a>
+    <a mat-menu-item routerLink="/customer">Customer</a>
+    <a mat-menu-item routerLink="/employees">Employees</a>
+    <a mat-menu-item routerLink="/OrderDetails">Orders Details</a>
+    <a mat-menu-item routerLink="/product">Product</a>
+    <a mat-menu-item routerLink="/orders">Orders</a>
+    <a mat-menu-item routerLink="/shipper">Shipper</a>
+    <a mat-menu-item routerLink="/supplier">Supplier</a>
+    <!--routerLinkActive="active-link"-->
+  </ng-template>
+</mat-menu>
+<nav>
+  <button mat-raised-button [matMenuTriggerFor]="appMenu">Home</button> 
+  
+</nav> 
+
+
